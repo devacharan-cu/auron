@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find &amp; compare homes · Rainfold · Auron</title>
+    <meta name="description" content="Locate any of the 48 illustrative homes at Rainfold on the site plan and section, see its light, and compare up to three. A fictional concept." />
+    <meta name="theme-color" content="#f3efe7" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F3EFE7'/%3E%3Cpath d='M6 22a10 10 0 0 1 20 0' fill='none' stroke='%231F1E1B' stroke-width='2.4'/%3E%3Cpath d='M3 23.5h26' stroke='%231F1E1B' stroke-width='2'/%3E%3Ccircle cx='10.3' cy='13.8' r='2.6' fill='%231F1E1B'/%3E%3C/svg%3E" />
+    <script type="module" src="/src/pages/find.js"></script>
+  </head>
+  <body>
+    <!--#header key="residences"-->
+    <main id="main" class="page ">
+      <header class="page-head wrap">
+        <p class="kicker"><span><a href="/residences/">Residences</a></span><span>Find &amp; compare</span><span>48 illustrative homes</span></p>
+        <h1 class="page-title">Find a home, then see its light.</h1>
+        <p class="lede">Pick a home on the site plan, the section or the schedule; the others follow. The floor plan shows where the sun reaches at the time you choose. Add up to three homes to compare them side by side.</p>
+      </header>
+
+      <div class="wrap homes">
+        <div class="homes-where">
+          <figure class="drawing-sheet">
+            <div class="sheet-cap"><span class="sc-no">Drawing P-01</span><span>Site plan · north up</span><span>Homes A–D on each terrace</span></div>
+            <div class="level-pick" role="group" aria-label="Level">
+              <span class="lp-label">Level</span>
+              <button type="button" data-level="2">Roof terrace</button>
+              <button type="button" data-level="1">Middle</button>
+              <button type="button" data-level="0">Garden</button>
+              <span class="side-pick" role="group" aria-label="Side of the valley shown">
+                <button type="button" data-side="west">West side</button>
+                <button type="button" data-side="east">East side</button>
+              </span>
+            </div>
+            <div id="plan-host"></div>
+          </figure>
+          <figure class="drawing-sheet">
+            <div class="sheet-cap"><span class="sc-no">Drawing S-02</span><span>Section A–A · terrace and level</span><span class="sc-note" id="cut-note">Representative of every home on a terrace</span></div>
+            <div id="loc-section-host"></div>
+          </figure>
+        </div>
+        <h2 class="sr-only">Selected home</h2>
+        <div class="homes-what" id="detail-host"></div>
+        <div class="homes-list" id="list-host"></div>
+      </div>
+
+      <section class="wrap compare" id="compare" aria-labelledby="cmp-title">
+        <div class="split-head">
+          <h2 id="cmp-title" class="ch-title ch-title--sm">Compare.</h2>
+          <p class="lede">Up to three homes, in the same light. Your selection is kept in this browser only.</p>
+        </div>
+        <div id="compare-host"></div>
+      </section>
+    </main>
+    <!--#footer-->
+  </body>
+</html>

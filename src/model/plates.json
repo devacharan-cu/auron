@@ -1,0 +1,73 @@
+{
+  "nandi-monsoon": {
+    "w": 1600,
+    "h": 1071,
+    "alt": "Monsoon cloud rolling over the green flank of the Nandi Hills, with the plateau spread out below.",
+    "caption": "The plateau north of Bengaluru in the monsoon, from the Nandi Hills.",
+    "author": "Harsha K R",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Monsoon_clouds_over_the_Nandi_Hills_India.jpg"
+  },
+  "red-earth-path": {
+    "w": 1600,
+    "h": 1200,
+    "alt": "A freshly cut red-earth path running beside the water of Jakkur Lake, with date palms and scrub.",
+    "caption": "Red earth beside Jakkur Lake, North Bengaluru.",
+    "author": "Shankar Raman",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Jakkur_lake_Bangalore_.jpg"
+  },
+  "plateau-hill": {
+    "w": 1600,
+    "h": 1200,
+    "alt": "A lone granite hill rising from the hazy blue plateau under a clear sky.",
+    "caption": "A granite hill on the plateau, seen from the Nandi Hills area.",
+    "author": "Lijith.l7",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Clear_sky_Mountain.jpg"
+  },
+  "raintree-canopy": {
+    "w": 1600,
+    "h": 1140,
+    "alt": "Looking up into the wide, branching canopy of a rain tree.",
+    "caption": "Under a rain tree (Samanea saman), Mysuru — the species planned for the valley.",
+    "author": "Vinayaraj",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Albizia_saman_-_Raintree_at_Mysuru.jpg"
+  },
+  "jakkur-lake": {
+    "w": 1600,
+    "h": 629,
+    "alt": "Wide view of Jakkur Lake in early morning light, with a bund path, coconut palms and distant towers.",
+    "caption": "Jakkur Lake, one of the tanks of North Bengaluru, early morning.",
+    "author": "Manu.mohan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Jakkur_lake.JPG"
+  },
+  "nandydroog-1790s": {
+    "w": 1600,
+    "h": 1158,
+    "alt": "Hand-coloured engraving of the granite fort hill of Nandidurg rising above a rocky plain.",
+    "caption": "N.W. view of Nandydroog, from Colebrooke’s Twelve Views of Places in the Kingdom of Mysore, published 1805.",
+    "author": "J. W. Edy after R. H. Colebrooke",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "kind": "Engraving",
+    "source": "https://commons.wikimedia.org/wiki/File:N.W._view_of_Nandydroog_(North_West_view_of_Nandy_Droog)_(cropped).jpg"
+  },
+  "hebbal-lake": {
+    "w": 1600,
+    "h": 1064,
+    "alt": "Hebbal Lake on a hazy morning: still water dotted with birds, a low island of scrub, a line of stones and faint towers on the far shore.",
+    "caption": "Hebbal Lake, one of the old tanks on the northern edge of Bengaluru, on a February morning in 2008.",
+    "author": "Nagesh Kamath",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "source": "https://commons.wikimedia.org/wiki/File:Hebbal_Lake_2008.jpg"
+  }
+}

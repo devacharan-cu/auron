@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landscape · Rainfold · Auron</title>
+    <meta name="description" content="The landscape of Rainfold: a valley floor kept as a shared garden, rain pools, rain trees, courtyards and planted roofs. A fictional concept." />
+    <meta name="theme-color" content="#f3efe7" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F3EFE7'/%3E%3Cpath d='M6 22a10 10 0 0 1 20 0' fill='none' stroke='%231F1E1B' stroke-width='2.4'/%3E%3Cpath d='M3 23.5h26' stroke='%231F1E1B' stroke-width='2'/%3E%3Ccircle cx='10.3' cy='13.8' r='2.6' fill='%231F1E1B'/%3E%3C/svg%3E" />
+    <script type="module" src="/src/pages/landscape.js"></script>
+  </head>
+  <body>
+    <!--#header key="landscape"-->
+    <main id="main" class="page page--landscape">
+      <header class="page-head wrap">
+        <p class="kicker"><span>Landscape</span><span>Places · planting · water</span></p>
+        <h1 class="page-title">A valley that holds its rain.</h1>
+      </header>
+      <figure data-plate="raintree-canopy" data-no="04" class="land-hero" data-eager data-sizes="100vw"></figure>
+
+      <section class="wrap land-intro">
+        <p class="lede-xl">The floor of the fold belongs to everyone. Instead of a clubhouse and a list of amenities, Rainfold keeps one continuous landscape: a walk under rain trees, pools that fill in June, courtyards between the terraces and gardens on the lower roofs.</p>
+        <p class="note">Illustrative concept. A real project would define its amenities, maintenance and access in its registration documents.</p>
+      </section>
+
+      <section class="wrap places" aria-labelledby="pl-title">
+        <figure class="drawing-sheet">
+          <div class="sheet-cap"><span class="sc-no">Drawing L-01</span><span id="pl-title">Places on the valley floor · north up</span><span>Illustrative</span></div>
+          <div id="places-plan"></div>
+        </figure>
+        <h2 class="sr-only">Places on the valley floor</h2>
+        <ol class="place-list" id="place-list">
+          <li data-place="1"><span class="pl-no">1</span><div><h3>The valley walk</h3><p>A shaded path along the whole valley, about 90 m, linking both terraces and the rain garden.</p></div></li>
+          <li data-place="2"><span class="pl-no">2</span><div><h3>The rain garden</h3><p>A chain of shallow pools. In the monsoon they hold the roof and slope run-off; in the dry months, reeds and stones.</p></div></li>
+          <li data-place="3"><span class="pl-no">3</span><div><h3>Rain-tree grove</h3><p>Wide, low canopies over the valley floor: the coolest place on the site in the afternoon.</p></div></li>
+          <li data-place="4"><span class="pl-no">4</span><div><h3>Courtyards</h3><p>Between the terraces: the entrance to every home, and shade on its bedroom side.</p></div></li>
+          <li data-place="5"><span class="pl-no">5</span><div><h3>Planted roofs</h3><p>The lower terraces' roofs are gardens, seen from the homes above.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="wrap land-seasons" aria-labelledby="se-title">
+        <h2 id="se-title" class="ch-title ch-title--sm">The same ground, twice a year.</h2>
+        <div class="season-pair">
+          <figure class="drawing-sheet"><div class="sheet-cap"><span class="sc-no">Detail L-02</span><span>Rain garden · 21 Mar, 10:00 am · dry season</span></div><div class="season-draw" id="season-dry"></div></figure>
+          <figure class="drawing-sheet"><div class="sheet-cap"><span class="sc-no">Detail L-03</span><span>Rain garden · 21 Jun, 10:00 am · monsoon</span></div><div class="season-draw" id="season-wet"></div></figure>
+        </div>
+      </section>
+
+      <section class="wrap planting" aria-labelledby="pt-title">
+        <h2 id="pt-title" class="mini-head">Planting palette · illustrative, to be confirmed by a landscape architect</h2>
+        <div class="table-wrap table-wrap--plain" tabindex="0" role="region" aria-label="Planting palette table (scrolls sideways)">
+          <table class="plain-table">
+            <thead><tr><th scope="col">Plant</th><th scope="col">Role</th><th scope="col">Where</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Rain tree <em>(Samanea saman)</em></th><td>Wide shade canopy</td><td>Valley walk</td></tr>
+              <tr><th scope="row">Honge <em>(Pongamia pinnata)</em></th><td>Evergreen shade that tolerates dry spells</td><td>Courtyards, plateau edge</td></tr>
+              <tr><th scope="row">Neem <em>(Azadirachta indica)</em></th><td>Dry-season shade</td><td>Plateau edge</td></tr>
+              <tr><th scope="row">Vetiver <em>(Chrysopogon zizanioides)</em></th><td>Deep roots that hold banks, wet or dry</td><td>Rain-garden edges</td></tr>
+              <tr><th scope="row">Native grasses and reeds</th><td>Slow and soak run-off</td><td>Rain-garden beds</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <figure data-plate="jakkur-lake" data-no="05" class="ground-pano" data-sizes="100vw"></figure>
+      <nav class="wrap next-grid next-grid--2" aria-label="Continue">
+        <a href="/journal/water-held/"><span class="ng-k">Journal</span><span class="ng-t">Water held, not drained: the valley and the tanks</span></a>
+        <a href="/location/"><span class="ng-k">Location</span><span class="ng-t">The plateau north of the city</span></a>
+      </nav>
+    </main>
+    <!--#footer-->
+  </body>
+</html>

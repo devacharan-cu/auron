@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visit · Rainfold · Auron</title>
+    <meta name="description" content="How a visit to Rainfold would work: choose the hour, choose how to talk. A fictional concept; nothing is booked or sent." />
+    <meta name="theme-color" content="#f3efe7" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F3EFE7'/%3E%3Cpath d='M6 22a10 10 0 0 1 20 0' fill='none' stroke='%231F1E1B' stroke-width='2.4'/%3E%3Cpath d='M3 23.5h26' stroke='%231F1E1B' stroke-width='2'/%3E%3Ccircle cx='10.3' cy='13.8' r='2.6' fill='%231F1E1B'/%3E%3C/svg%3E" />
+    <script type="module" src="/src/pages/visit.js"></script>
+  </head>
+  <body>
+    <!--#header key="visit"-->
+    <main id="main" class="page ">
+      <header class="page-head wrap">
+        <p class="kicker"><span>Visit</span><span>A walk, or a call</span><span>Prototype · nothing is sent</span></p>
+        <h1 class="page-title">Walk the valley at the right hour.</h1>
+        <p class="lede">For a real project this would be where you book a site walk or a call. Because the homes are about light, the first question isn't your name. It's the time of day you would like to see them in.</p>
+      </header>
+
+      <form class="wrap visit-flow" id="visit-flow" novalidate>
+        <fieldset class="step">
+          <legend><span class="step-no">1</span>Choose the hour</legend>
+          <div class="step-body step-body--hour">
+            <div class="slots" id="slots">
+              <label><input type="radio" name="slot" value="morning" checked><span><strong>Saturday, 7:30 am</strong>Morning light across the west terrace</span></label>
+              <label><input type="radio" name="slot" value="noon"><span><strong>Saturday, 12:30 pm</strong>The high sun, and how the eaves hold it back</span></label>
+              <label><input type="radio" name="slot" value="afternoon"><span><strong>Saturday, 4:30 pm</strong>Afternoon sun through the east-terrace louvres</span></label>
+            </div>
+            <figure class="drawing-sheet visit-preview"><div class="sheet-cap"><span class="sc-no">Preview</span><span id="preview-cap">What you would see</span><span>Illustrative</span></div><div id="visit-draw"></div></figure>
+          </div>
+        </fieldset>
+        <fieldset class="step">
+          <legend><span class="step-no">2</span>Choose how to talk</legend>
+          <div class="slots slots--row">
+            <label><input type="radio" name="via" value="walk" checked><span><strong>A site walk</strong>About an hour, on foot</span></label>
+            <label><input type="radio" name="via" value="call"><span><strong>A call</strong>Through the drawings, any time zone</span></label>
+            <label><input type="radio" name="via" value="whatsapp"><span><strong>WhatsApp</strong>Questions in writing</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="step">
+          <legend><span class="step-no">3</span>Review</legend>
+          <p class="visit-summary" id="visit-summary"></p>
+          <button type="submit" class="btn btn--solid">Request this visit</button>
+          <p class="visit-result" id="visit-result" role="status"></p>
+          <p class="note">This is a portfolio prototype. There is no site, no booking system and no form data. This page asks for no personal details, and nothing you choose leaves your browser.</p>
+        </fieldset>
+      </form>
+    </main>
+    <!--#footer-->
+  </body>
+</html>

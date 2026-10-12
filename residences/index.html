@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Residences · Rainfold · Auron</title>
+    <meta name="description" content="The four kinds of home at Rainfold, with illustrative floor plans, areas and specification. A fictional concept." />
+    <meta name="theme-color" content="#f3efe7" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F3EFE7'/%3E%3Cpath d='M6 22a10 10 0 0 1 20 0' fill='none' stroke='%231F1E1B' stroke-width='2.4'/%3E%3Cpath d='M3 23.5h26' stroke='%231F1E1B' stroke-width='2'/%3E%3Ccircle cx='10.3' cy='13.8' r='2.6' fill='%231F1E1B'/%3E%3C/svg%3E" />
+    <script type="module" src="/src/pages/residences.js"></script>
+  </head>
+  <body>
+    <!--#header key="residences"-->
+    <main id="main" class="page ">
+      <header class="page-head wrap">
+        <p class="kicker"><span>Residences</span><span>Four types · 48 homes · illustrative</span></p>
+        <h1 class="page-title">Four kinds of home, all facing the valley.</h1>
+        <p class="lede">Every home is one floor, 12 m wide and 16 m deep, with the valley in front and a courtyard behind. What changes from level to level is what is outside: a garden, the view, or a roof terrace of your own.</p>
+      </header>
+
+      <section class="wrap types" aria-labelledby="types-title">
+        <h2 id="types-title" class="sr-only">Home types</h2>
+        <div class="type-tabs" role="tablist" aria-label="Home types" id="type-tabs"></div>
+        <div class="type-panel" id="type-panel" role="tabpanel"></div>
+        <div class="type-clock" id="type-clock"></div>
+      </section>
+
+      <section class="wrap areas" aria-labelledby="areas-title">
+        <div class="split-head">
+          <h2 id="areas-title" class="ch-title ch-title--sm">Areas, plainly.</h2>
+          <p class="lede">Carpet area is the area you live in: inside the walls, measured the way the Real Estate (Regulation and Development) Act, 2016 defines it. It excludes the verandah, terraces and gardens, which are listed separately. No super built-up figure is shown anywhere on this site. <a href="/journal/carpet-area/">Why carpet area first →</a></p>
+        </div>
+        <div class="table-wrap table-wrap--plain" tabindex="0" role="region" aria-label="Areas table (scrolls sideways)"><table class="plain-table" id="area-table"></table></div>
+      </section>
+
+      <section class="wrap spec" aria-labelledby="spec-title">
+        <h2 id="spec-title" class="mini-head">Specification · illustrative concept, not a commitment</h2>
+        <dl class="register register--wide">
+          <div><dt>Structure</dt><dd>Reinforced concrete frame and slabs; retaining walls to the courtyard side</dd></div>
+          <div><dt>Walls</dt><dd>Lime-plastered masonry, re-limed rather than painted</dd></div>
+          <div><dt>Plinths &amp; steps</dt><dd>Grey granite in coursed blocks</dd></div>
+          <div><dt>Shading</dt><dd>Deep eaves to every verandah; timber louvres on west-facing verandahs</dd></div>
+          <div><dt>Windows</dt><dd>Full-height doors to the verandah; high windows to the courtyard</dd></div>
+          <div><dt>Water</dt><dd>Roof and slope run-off held in the valley's rain garden</dd></div>
+        </dl>
+      </section>
+
+      <section class="wrap find-cta">
+        <a class="cta-panel" href="/residences/find/">
+          <span class="ng-k">Find &amp; compare</span>
+          <span class="cta-t">Locate any of the 48 homes on the plan and the section, see its light, and compare up to three.</span>
+          <span class="cta-go" aria-hidden="true">→</span>
+        </a>
+      </section>
+    </main>
+    <!--#footer-->
+  </body>
+</html>

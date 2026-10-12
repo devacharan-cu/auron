@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Architecture · Rainfold · Auron</title>
+    <meta name="description" content="The architecture of Rainfold: terraces cut into the contour, homes open to a courtyard and the valley, light held back where the sun is hardest. A fictional concept." />
+    <meta name="theme-color" content="#f3efe7" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F3EFE7'/%3E%3Cpath d='M6 22a10 10 0 0 1 20 0' fill='none' stroke='%231F1E1B' stroke-width='2.4'/%3E%3Cpath d='M3 23.5h26' stroke='%231F1E1B' stroke-width='2'/%3E%3Ccircle cx='10.3' cy='13.8' r='2.6' fill='%231F1E1B'/%3E%3C/svg%3E" />
+    <script type="module" src="/src/pages/architecture.js"></script>
+  </head>
+  <body>
+    <!--#header key="architecture"-->
+    <main id="main" class="page ">
+      <header class="page-head wrap">
+        <p class="kicker"><span>Architecture</span><span>Design philosophy</span></p>
+        <h1 class="page-title">Cut into the slope, open to the light.</h1>
+      </header>
+
+      <section class="wrap tenets" aria-label="Three principles">
+        <ol>
+          <li><span class="tn-no">01</span><p class="tn-t">Follow the ground.</p><p class="tn-d">The terraces step with the slope. Earth cut from behind each one is held by its back wall, so the valley keeps its shape and nothing becomes a podium.</p></li>
+          <li><span class="tn-no">02</span><p class="tn-t">Open both ways.</p><p class="tn-d">Every home looks across the valley at the front and onto a courtyard at the back. Air crosses it, and bedrooms take the quieter side.</p></li>
+          <li><span class="tn-no">03</span><p class="tn-t">Hold the light back where it is hardest.</p><p class="tn-d">Deep eaves keep the high midday sun off the glass. Timber louvres take the low afternoon sun on the west-facing side. The morning sun is let in.</p></li>
+        </ol>
+      </section>
+
+      <section class="wrap arch-section" aria-labelledby="ls-title">
+        <div class="split-head">
+          <h2 id="ls-title" class="ch-title ch-title--sm">The section, live.</h2>
+          <p class="lede">The whole site in one cut, looking north. Pick a time and a day of the year. The clock is shared with every other drawing on this site, so the homes you look at next are shown in the same light.</p>
+        </div>
+        <div class="living" id="living"></div>
+        <p class="method"><strong>How the light is drawn.</strong> Standard declination and hour-angle formulas for 13.1° N in Indian Standard Time, with shadows traced through this drawing's own geometry. The section shows only the east–west part of the sunlight; plans use its full direction. Terrain and buildings are invented: a concept visualisation, not a daylight study.</p>
+      </section>
+
+      <section class="wrap keyed" aria-labelledby="kd-title">
+        <figure class="drawing-sheet">
+          <div class="sheet-cap"><span class="sc-no">Detail A-01</span><span id="kd-title">East terrace, valley edge · 21 Mar, 4:00 pm</span><span>Illustrative</span></div>
+          <div class="kd-draw" id="keyed-detail"></div>
+        </figure>
+        <ol class="keynotes">
+          <li><span>1</span><p><strong>Planted roof.</strong> Soil over the top slab, looked down on from the terrace above, so it reads as a garden rather than a roof.</p></li>
+          <li><span>2</span><p><strong>Eave.</strong> The slab runs 0.6 m past the verandah edge here, and 0.9 m on the east-facing terrace, where only the high sun must be stopped.</p></li>
+          <li><span>3</span><p><strong>Timber louvres.</strong> On west-facing verandahs only. They break the low afternoon sun before it reaches the living room.</p></li>
+          <li><span>4</span><p><strong>Verandah.</strong> 3.4 m deep and the width of the home: a room outside, between the louvres and the glass.</p></li>
+          <li><span>5</span><p><strong>Back windows.</strong> Above the retained earth, onto the courtyard: the second side of every home.</p></li>
+        </ol>
+      </section>
+
+      <section class="wrap materials" aria-labelledby="mat-title">
+        <h2 id="mat-title" class="mini-head">Material key · four surfaces, as drawn · illustrative specification</h2>
+        <ul class="swatches" id="swatches"></ul>
+      </section>
+      <nav class="wrap next-grid next-grid--2" aria-label="Continue">
+        <a href="/record/"><span class="ng-k">Record</span><span class="ng-t">Every decision, as a detail at the hour it matters</span></a>
+        <a href="/residences/"><span class="ng-k">Residences</span><span class="ng-t">The homes these decisions make</span></a>
+      </nav>
+    </main>
+    <!--#footer-->
+  </body>
+</html>

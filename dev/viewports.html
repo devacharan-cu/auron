@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Viewports · dev harness</title>
+    <style>
+      body { margin: 0; background: #8a867e; font: 12px system-ui, sans-serif; color: #fff; }
+      .row { display: flex; gap: 20px; padding: 14px; align-items: flex-start; }
+      figure { margin: 0; }
+      figcaption { margin-bottom: 6px; }
+      iframe { border: 0; background: #fff; display: block; }
+    </style>
+  </head>
+  <body>
+    <!-- Dev-only (not built): renders pages at fixed widths. ?w=390&src=/residences/ ; window.show(url, selector) scrolls the frame. -->
+    <div class="row" id="row"></div>
+    <script>
+      const q = new URLSearchParams(location.search);
+      const widths = (q.get('w') || '390,820').split(',').map(Number);
+      const row = document.getElementById('row');
+      for (const w of widths) {
+        const fig = document.createElement('figure');
+        fig.innerHTML = `<figcaption>${w}px</figcaption><iframe data-w="${w}" src="${q.get('src') || '/'}" style="width:${w}px;height:${w < 600 ? 844 : 1100}px"></iframe>`;
+        row.append(fig);
+      }
+      const frames = () => [...document.querySelectorAll('iframe')];
+      // repaint nudge: hidden/background tabs don't repaint iframes until their size changes
+      const nudge = () => frames().forEach((f) => { f.style.height = parseInt(f.style.height) + (f.dataset.n ? -1 : 1) + 'px'; f.dataset.n = f.dataset.n ? '' : '1'; });
+      window.show = async (url, sel, off = 60) => {
+        if (url) {
+          await Promise.all(frames().map((f) => new Promise((r) => { f.onload = r; f.src = url; })));
+          await new Promise((r) => setTimeout(r, 1500));
+        }
+        if (sel) for (const f of frames()) {
+          const w = f.contentWindow, el = w.document.querySelector(sel);
+          if (el) w.scrollTo(0, el.getBoundingClientRect().top + w.scrollY - off);
+        }
+        await new Promise((r) => setTimeout(r, 700));
+        nudge();
+        await new Promise((r) => setTimeout(r, 300));
+        return 'ok';
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Location · Rainfold · Auron</title>
+    <meta name="description" content="The North Bengaluru region that Rainfold imagines: plateau, lakes and the infrastructure reported around it. A fictional concept with no real site." />
+    <meta name="theme-color" content="#f3efe7" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F3EFE7'/%3E%3Cpath d='M6 22a10 10 0 0 1 20 0' fill='none' stroke='%231F1E1B' stroke-width='2.4'/%3E%3Cpath d='M3 23.5h26' stroke='%231F1E1B' stroke-width='2'/%3E%3Ccircle cx='10.3' cy='13.8' r='2.6' fill='%231F1E1B'/%3E%3C/svg%3E" />
+    <script type="module" src="/src/pages/location.js"></script>
+  </head>
+  <body>
+    <!--#header key="location"-->
+    <main id="main" class="page ">
+      <header class="page-head wrap">
+        <p class="kicker"><span>Location</span><span>North Bengaluru · <span lang="kn" class="kn">ಉತ್ತರ ಬೆಂಗಳೂರು</span></span></p>
+        <h1 class="page-title">North of the city, on the plateau.</h1>
+        <p class="lede">Rainfold has no real site. It imagines the kind of land found between the north of Bengaluru and the airport: gently folded ground, granite hills on the horizon and a chain of old tanks. This page describes that region honestly, without travel times to a place that doesn't exist.</p>
+      </header>
+
+      <section class="wrap region" aria-labelledby="map-title">
+        <figure class="drawing-sheet">
+          <div class="sheet-cap"><span class="sc-no">Drawing R-01</span><span id="map-title">The region · schematic, not to scale</span><span>North up</span></div>
+          <div id="region-map"></div>
+        </figure>
+        <h2 class="sr-only">Places in the region</h2>
+        <ul class="region-list">
+          <li><h3>Hebbal</h3><p>The northern gateway of the city, at its lake and the highway north.</p></li>
+          <li><h3>Jakkur and Yelahanka</h3><p>Lakes, older neighbourhoods and an air force station, with farmland beyond.</p></li>
+          <li><h3>Devanahalli and the airport</h3><p>Kempegowda International Airport and the land around it, where much of the north's recent growth has gone.</p></li>
+          <li><h3>Nandi Hills</h3><p>The granite hills on the northern horizon, where the plateau rises.</p></li>
+          <li class="region-concept"><h3>Rainfold (concept)</h3><p>Shown as a hatched area, not a point: a kind of place, not a parcel.</p></li>
+        </ul>
+      </section>
+
+      <figure data-plate="plateau-hill" data-no="03" class="wrap loc-plate" data-sizes="(max-width: 760px) 100vw, 70vw"></figure>
+
+      <section class="wrap infra" aria-labelledby="infra-title">
+        <div class="split-head">
+          <h2 id="infra-title" class="ch-title ch-title--sm">What is reported, and by whom.</h2>
+          <p class="lede">Infrastructure dates are where property marketing most often overreaches. These are secondary reports, checked on 12 October 2026, and they disagree. None is verified with the agencies building them.</p>
+        </div>
+        <div class="table-wrap table-wrap--plain" tabindex="0" role="region" aria-label="Infrastructure reports table (scrolls sideways)">
+          <table class="plain-table infra-table">
+            <thead><tr><th scope="col">Project</th><th scope="col">Reported status</th><th scope="col">Sources</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Namma Metro Blue Line, Hebbal–Airport</th><td>Under construction. Reported targets for the airport section range from early 2027 to March 2028.</td><td><a href="https://www.businesstoday.in/india/story/tired-of-bengaluru-traffic-airport-metro-crosses-72-mark-heres-what-it-means-for-you-547584-2026-08-06" rel="noopener" target="_blank">Business Today, 6 Aug 2026</a> · <a href="https://www.deccanherald.com/india/karnataka/bengaluru/namma-metro-md-inspects-airport-line-wants-speedy-completion-3660012" rel="noopener" target="_blank">Deccan Herald</a> · <a href="https://www.nativeplanet.com/news/bengaluru-metros-blue-line-namma-metros-blue-line-services-will-be-operational-in-march-2028-023833.html" rel="noopener" target="_blank">Native Planet</a></td></tr>
+              <tr><th scope="row">Satellite Town Ring Road (STRR)</th><td>Northern stretch reported operating; a remaining section reported as targeted for November 2026.</td><td><a href="https://swarajyamag.com/news-brief/144-km-of-bengaluru-satellite-town-ring-road-set-to-open-by-november-2026-report" rel="noopener" target="_blank">Swarajya</a></td></tr>
+              <tr><th scope="row">Kempegowda International Airport</th><td>Operating.</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">A real project would state only what it can evidence, with dates and sources, and update them. It would never round "under construction" into "minutes away".</p>
+      </section>
+      <nav class="wrap next-grid next-grid--2" aria-label="Continue">
+        <a href="/landscape/"><span class="ng-k">Landscape</span><span class="ng-t">The valley floor and its water</span></a>
+        <a href="/visit/"><span class="ng-k">Visit</span><span class="ng-t">Walk the valley at the right hour</span></a>
+      </nav>
+    </main>
+    <!--#footer-->
+  </body>
+</html>
