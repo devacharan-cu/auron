@@ -3,7 +3,7 @@
 Fictional portfolio concept. Static multi-page site: Vite 7, Tailwind CSS 4, vanilla ES modules, SVG drawings. No WebGL.
 
 ## Run and build
-- `npm run dev`: http://localhost:5173/ (unknown routes return 404, as on a static host)
+- `npm run dev`: http://localhost:5180/ (unknown routes return 404, as on a static host)
 - `npm run build`: writes `dist/` (15 pages). Serve it from any static host; configure `404.html` as the not-found page.
 - `npm run images`: regrades `assets/images-src/*.jpg` into `public/images/` (AVIF, WebP and JPEG at 800 and 1600 px)
 - `dev/viewports.html` is a dev-only harness (fixed-width iframes) and is not part of the build.

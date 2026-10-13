@@ -10,7 +10,7 @@ A static multi-page site: Vite 7, Tailwind CSS 4, vanilla ES modules and inline 
 
 ```sh
 npm install
-npm run dev       # http://localhost:5173/
+npm run dev       # http://localhost:5180/
 npm run build     # writes dist/ (15 pages, including 404.html)
 npm run preview   # serves dist/ with the production security headers from vercel.json
 npm run images    # regrades assets/images-src/*.jpg into public/images/ and writes public/og.jpg

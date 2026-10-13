@@ -85,7 +85,7 @@ function partials() {
 export default defineConfig({
   plugins: [tailwindcss(), partials()],
   appType: 'mpa', // unknown routes 404, as on a static host
-  server: { port: 5173, strictPort: true },
+  server: { port: 5180, strictPort: false }, // falls back to the next free port if 5180 is busy
   // `npm run preview` sends the same security headers as production (vercel.json), so the CSP is tested locally
   preview: {
     headers: Object.fromEntries(JSON.parse(readFileSync(join(root, 'vercel.json'), 'utf8')).headers[0].headers.map((h) => [h.key, h.value])),
